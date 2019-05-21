@@ -501,6 +501,10 @@ The secret Sauce for creating video with GPUs & Kubernetes Jobs
 
 ![Ant Kennedy](images/ant-kennedy.jpg)
 
+### Role
+
+CTO Gapsquare
+
 ### Bio
 
 Ant Kennedy is currently CTO at Gapsquare where he is currently focusing on
