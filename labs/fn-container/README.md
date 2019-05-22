@@ -9,7 +9,7 @@ permalink: /ziplabs/fn-container/index.html
 
 ## Before You Begin ##
 
-This 15-minute lab provides a guide to deploying containers as functions with Fn.
+Please complete the Fn introduction lab prior to starting this one. This 15-minute lab provides a guide to deploying containers as functions with Fn.
 
 ### Background ###
 

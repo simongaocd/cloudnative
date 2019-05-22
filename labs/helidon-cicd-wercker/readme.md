@@ -24,7 +24,7 @@ The following list shows the minimum versions:
 
 ## Create a Wercker Application 
 
-1. Begin by logging into your GitHub account forking the quickstart-se application from [our GitHub repo](https://github.com/mickeyboxell/helidon/helidon-se-codeone-2018). 
+1. Begin by logging into your GitHub account forking the quickstart-se application from [our GitHub repo](https://github.com/mickeyboxell/helidon-se-codeone-2018). 
 
 2. Navigate to https://app.wercker.com/. Create an account if you do not already have one. 
 

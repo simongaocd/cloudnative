@@ -9,6 +9,8 @@ permalink: /ziplabs/oke-deploy/index.html
 
 ## Before You Begin ##
 
+Please complete the OCIR Image lab prior to starting this one. 
+
 This 15-minute tutorial shows you how to:
 
 * Check the status of a Kubernetes cluster running in Oracle Container Engine for Kubernetes (OKE) with both OCI Console and <samp>kubectl</samp>
@@ -95,39 +97,39 @@ Having created the secret, you now include the name of the secret in the manifes
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-name: helloworld-deployment
+  name: helloworld-deployment
 spec:
-selector:
-matchLabels:
+  selector:
+    matchLabels:
+      app: helloworld
+  replicas: 1
+  template:
+    metadata:
+      labels:
         app: helloworld
-replicas: 1
-template:
-metadata:
-        labels:
-        app: helloworld
-spec:
-        containers:
-        - name: helloworld
-        # enter the path to your image, update the 'N' to your demo user
+    spec:
+      containers:
+      - name: helloworld
+      # enter the path to your image, update the 'N' to your demo user
         image: phx.ocir.io/cloudnative-devrel/demoN/helloworld:latest
         ports:
         - containerPort: 80
-        imagePullSecrets:  
-        # enter the name of the secret you created  
-        - name:  ocirsecret
+      imagePullSecrets:  
+      # enter the name of the secret you created  
+      - name:  ocirsecret
 ---
 apiVersion: v1
 kind: Service
 metadata:
-name: helloworld-service
+  name: helloworld-service
 spec:
-type: LoadBalancer
-ports:
-- port: 80
-protocol: TCP
-targetPort: 80
-selector:
-app: helloworld
+  type: LoadBalancer
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: helloworld
 ```
 
 3. Change the `image` and `name` attributes to point at the image and secret you have created.

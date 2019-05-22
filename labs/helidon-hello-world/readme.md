@@ -62,16 +62,16 @@ You can now access the application	at http://localhost:8080/greet
 The example is a very simple "Hello World" greeting service. It supports GET requests for generating a greeting message, and a PUT request for changing the greeting itself. The response is encoded using JSON. For example: 
 
 ```
-curl -X GET http://localhost:31431/greet
+curl -X GET http://localhost:8080/greet
 {"message":"Hello World!"}
 
-curl -X GET http://localhost:31431/greet/Joe
+curl -X GET http://localhost:8080/greet/Joe
 {"message":"Hello Joe!"}
 
-curl -X PUT http://localhost:31431/greet/greeting/Hola
+curl -X PUT http://localhost:8080/greet/greeting/Hola
 {"greeting":"Hola"}
 
-curl -X GET http://localhost:31431/greet/Jose
+curl -X GET http://localhost:8080/greet/Jose
 {"message":"Hola Jose!"}
 ```
 
