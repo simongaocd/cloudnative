@@ -13,8 +13,12 @@
       "section": "guides",
       "files": [
         {
-          "title": "Kubernetes Service Broker: Part One",
+          "title": "Kubernetes Service Broker Part One: A Walkthrough of the Kubernetes Service Broker",
           "file": "service-broker-tutorial-part-one.md"
+        },
+        {
+          "title": "Kubernetes Service Broker Part Two: OCI Installation Guide",
+          "file": "OCI-Service-Broker-Installation.md"
         }
       ]
     }

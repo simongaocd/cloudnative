@@ -18,7 +18,9 @@ Some history. Service brokers started in Cloud Foundry around 2016. From there t
 
 ### Prerequisites
 
-A walkthrough of the Kubernetes Service Broker:
+The guides will go through the installation of these assets.
+
+**Kubernetes Service Broker Part One: A walkthrough of the Kubernetes Service Broker**
 
 * Service Catalog requires a Kubernetes cluster v1.9 or later
 * Kubectl
@@ -26,4 +28,11 @@ A walkthrough of the Kubernetes Service Broker:
 * Minikube
 * Service Catalog and CLI
 
-The tutorial will go through the installation of these assets. 
+
+**Kubernetes Service Broker Part Two: OCI Installation Guide**
+
+* Oracle Kubernetes Engine (OKE) cluster
+* Kubectl installed and pointing at your OKE cluster
+* Helm with Tiller permissions installed on OKE
+* Service Catalog and CLI installed on OKE
+* Then JSON chrome extension
