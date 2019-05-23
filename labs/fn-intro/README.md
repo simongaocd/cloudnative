@@ -154,7 +154,7 @@ Docker images. The `--verbose` option allows you to see this process.
 In your terminal type the following:
 
 ```
-$ fn --verbose deploy --app nodeapp --local
+$ fn --verbose deploy --create-app --app nodeapp --local
 ```
 
 You should see output similar to:
