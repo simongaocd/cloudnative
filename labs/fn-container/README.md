@@ -196,7 +196,7 @@ Just like with a default build, the output is a container image. From this point
 Let's deploy to an application named 'tutorial':
 
 ```
-$ fn deploy --app tutorial --local --no-bump
+$ fn deploy --create-app --app tutorial --local --no-bump
 ```
 
 We can confirm the function is correctly defined by getting a list of the functions in the "tutorial" application:
